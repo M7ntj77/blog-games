@@ -239,6 +239,8 @@ th { background: var(--card); color: var(--accent); }
 td { color: var(--muted); }
 
 /* contato */
+.contato { max-width: 680px; }
+
 form {
   background: var(--bg-2);
   border: 1px solid var(--border);
