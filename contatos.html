@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Fale com o Save Point.">
+  <title>Save Point | Contatos</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&family=Press+Start+2P&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header>
+    <div class="container header-inner">
+      <a href="index.html" class="logo">SAVE<span>POINT</span></a>
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="lancamentos.html">Lançamentos</a></li>
+          <li><a href="analises.html">Análises</a></li>
+          <li><a href="retro.html">Retrô</a></li>
+          <li><a href="contatos.html" class="ativo">Contatos</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <section class="hero">
+    <div class="container">
+      <span class="tag">Contatos</span>
+      <h1>Fale com a gente</h1>
+      <p>Sugestão de pauta, dica de jogo, crítica ou elogio. Preencha o formulário abaixo que a gente responde assim que possível.</p>
+    </div>
+  </section>
+
+  <main class="container">
+    <section class="grade-2">
+      <form id="form-contato">
+        <div>
+          <label for="nome">Nome</label>
+          <input type="text" id="nome" name="nome" required>
+        </div>
+        <div>
+          <label for="email">E-mail</label>
+          <input type="email" id="email" name="email" required>
+        </div>
+        <div>
+          <label for="assunto">Assunto</label>
+          <select id="assunto" name="assunto">
+            <option>Sugestão de pauta</option>
+            <option>Dúvida</option>
+            <option>Parceria</option>
+            <option>Outro</option>
+          </select>
+        </div>
+        <div>
+          <label for="mensagem">Mensagem</label>
+          <textarea id="mensagem" name="mensagem" required></textarea>
+        </div>
+        <button type="submit">Enviar</button>
+        <p class="aviso" id="aviso"></p>
+      </form>
+
+      <article class="artigo">
+        <h2>Outros canais</h2>
+        <p>Se preferir, também dá para falar com o blog por aqui:</p>
+        <ul>
+          <li><strong>E-mail:</strong> contato@savepoint.blog</li>
+          <li><strong>Instagram:</strong> @savepoint.blog</li>
+          <li><strong>YouTube:</strong> Save Point</li>
+        </ul>
+        <p>Respondemos as mensagens de segunda a sexta.</p>
+      </article>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container footer-inner">
+      <p>Save Point &copy; 2026. Todos os direitos reservados.</p>
+      <p>Blog sobre games</p>
+    </div>
+  </footer>
+
+  <script src="js/contato.js"></script>
+</body>
+</html>
